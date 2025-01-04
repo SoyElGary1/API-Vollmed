@@ -1,0 +1,1 @@
+ALTER TABLE medicos ALTER COLUMN activo TYPE BOOLEAN USING (activo != 0);
