@@ -36,19 +36,11 @@ El proyecto sigue la estructura estándar de Maven.  Los componentes principales
 Aquí tienes una lista de los endpoints principales de la API:
 
 * **GET /medicos:** Obtiene una lista de todos los médicos.
-* **GET /medicos/{id}:** Obtiene un médico específico por su ID.
 * **POST /medicos:** Crea un nuevo médico.
-* **PUT /medicos/{id}:** Actualiza un médico existente.
+* **PUT /medicos:** Actualiza un médico existente.
 * **DELETE /medicos/{id}:** Elimina un médico.
 
 ## Pruebas
 
 Se recomienda utilizar Insomnia u otra herramienta similar para probar los endpoints de la API.  Puedes encontrar ejemplos de requests en la carpeta `tests` (si la creaste).
 
-## Contribuciones
-
-Las contribuciones son bienvenidas.  Por favor, abre un issue para reportar bugs o solicitar nuevas funcionalidades.
-
-## Licencia
-
-[Especifica la licencia de tu proyecto]
