@@ -6,7 +6,7 @@ import med.voll.api.domain.medico.DatosActualizarMedico;
 import med.voll.api.domain.medico.DatosListadoMedico;
 import med.voll.api.domain.medico.DatosRegistroMedico;
 import med.voll.api.domain.medico.Medico;
-import med.voll.api.repository.MedicoRepository;
+import med.voll.api.domain.medico.MedicoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -45,7 +45,6 @@ public class MedicoController {
     public ResponseEntity<Page<DatosListadoMedico>> listadoMedicos(@PageableDefault(size = 2) Pageable pageable) {
 //        return medicoRepository.findAll(pageable).map(DatosListadoMedico::new);
         return ResponseEntity.ok(medicoRepository.findAllByActivoTrue(pageable).map(DatosListadoMedico::new));
-
     }
 
 
